@@ -8,7 +8,6 @@ HTML / CSS / JavaScriptで作成した、レスポンシブなSNS紹介ページ
 
 - `profile.jpg`
 - `music.jpg`
-- `tiktok.jpg`
 - `dog-x.jpg`
 - `dog-instagram.jpg`
 - `main-instagram.jpg`
