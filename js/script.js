@@ -6,9 +6,15 @@ Object.entries(profileLinks).forEach(([key, url]) => {
 
     links.forEach((link) => {
       link.href = url;
+
       if (url !== "#") {
         link.target = "_blank";
         link.rel = "noopener noreferrer";
+
+        link.addEventListener("click", (event) => {
+          event.preventDefault();
+          window.open(url, "_blank", "noopener,noreferrer");
+        });
       }
     });
   });
