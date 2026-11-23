@@ -216,9 +216,7 @@ footer p { margin: 0; }
 .specialty-card__link img { transition: transform .35s ease, filter .35s ease; }
 
 .social-scroll {
-  grid-auto-columns: 46%;
-  gap: 12px;
-  width: calc(100% + 16px);
+  grid-auto-columns: calc((100% - 10px) / 2);
 }
 .social-card {
   height: 174px;
@@ -264,4 +262,20 @@ footer p { margin: 0; }
   background: rgba(57,120,199,.98);
   box-shadow: 0 12px 28px rgba(3,10,25,.38), 0 0 0 3px rgba(173,201,240,.18);
   transform: translateY(-2px);
+}
+
+/* 犬アカウントを専門分野カードと同じ2列幅に揃える */
+.social-scroll {
+  grid-auto-columns: calc((100% - 10px) / 2);
+}
+
+/* 犬Xの顔が切れないよう、画像を上寄せで表示 */
+.social-card[data-link="dogX"] img {
+  object-position: 50% 18%;
+}
+
+@media (max-width: 360px) {
+  .social-scroll {
+    grid-auto-columns: calc((100% - 8px) / 2);
+  }
 }
