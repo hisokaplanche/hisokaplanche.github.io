@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="音楽、フィットネス、愛犬のアカウントをまとめたプロフィールページ">
+  <title>プロフィール | SNS Links</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <main class="profile-page" id="top">
+    <header class="hero">
+      <!-- 【写真 1】メインプロフィール写真：assets/images/main.jpg -->
+      <img class="hero__photo" src="assets/images/main.jpg" alt="KAI｜ヒソカプランチェのプロフィール写真">
+      <div class="hero__shade" aria-hidden="true"></div>
+      <div class="hero__copy">
+        <h1>KAI｜ヒソカプランチェ</h1>
+        <p>Music / Fitness / Creator</p>
+        <a class="main-cta" href="#" data-link="mainInstagram">
+          <span>Instagram メインアカウントへ</span>
+          <small>FOLLOW ME</small>
+        </a>
+      </div>
+    </header>
+
+    <div class="content">
+      <section class="section" aria-labelledby="specialty-title">
+        <h2 id="specialty-title">専門分野</h2>
+        <div class="specialty-grid">
+          <article class="specialty-card" data-link="music">
+            <a class="specialty-card__link" href="#" aria-label="音楽アカウントを見る">
+              <!-- 【写真 2】音楽写真：assets/images/music.jpg -->
+              <img src="assets/images/music.jpg" alt="ギターを演奏する写真">
+              <div class="specialty-card__overlay" aria-hidden="true"></div>
+              <span class="specialty-card__icon" aria-hidden="true">♫</span>
+              <h3>MUSIC</h3>
+            </a>
+          </article>
+
+          <article class="specialty-card" data-link="fitness">
+            <a class="specialty-card__link" href="#" aria-label="フィットネスアカウントを見る">
+              <!-- 【写真 3】フィットネス写真：assets/images/fitness.jpg -->
+              <img src="assets/images/fitness.jpg" alt="フィットネスの写真">
+              <div class="specialty-card__overlay" aria-hidden="true"></div>
+              <span class="specialty-card__icon" aria-hidden="true">⚡</span>
+              <h3>FITNESS</h3>
+            </a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--social" aria-labelledby="social-title">
+        <h2 id="social-title">その他のアカウント</h2>
+        <div class="social-scroll" tabindex="0" aria-label="SNSアカウント一覧。左右にスクロールできます">
+          <article class="social-card" data-link="dogInstagram">
+            <a href="#" aria-label="愛犬のInstagramを見る">
+              <!-- 愛犬のInstagram写真：assets/images/doginsta.jpg -->
+              <img src="assets/images/doginsta.jpg" alt="愛犬のInstagram">
+              <div class="social-card__text">
+                <h3>愛犬アカウント (IG)</h3>
+                <p>フォロワー8,000人</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="social-card" data-link="dogX">
+            <a href="#" aria-label="愛犬のXを見る">
+              <!-- 愛犬のX写真：assets/images/dogx.jpg -->
+              <img src="assets/images/dogx.jpg" alt="愛犬のX">
+              <div class="social-card__text">
+                <h3>愛犬アカウント (X)</h3>
+                <p>フォロワー7,000人</p>
+              </div>
+            </a>
+          </article>
+
+          <article class="social-card" data-link="tiktok">
+            <a href="#" aria-label="TikTokを見る">
+              <img src="assets/images/tiktok.jpg" alt="TikTok">
+              <div class="social-card__text">
+                <h3>TikTok</h3>
+              </div>
+            </a>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <nav class="social-icons" aria-label="SNS">
+        <a href="#" data-link="mainInstagram" aria-label="メインInstagram">◎</a>
+        <a href="#" data-link="dogX" aria-label="X">𝕏</a>
+        <a href="#" data-link="tiktok" aria-label="TikTok">♪</a>
+      </nav>
+      <p>© <span id="year"></span> KAI｜ヒソカプランチェ</p>
+    </footer>
+  </main>
+
+  <script src="js/links.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>

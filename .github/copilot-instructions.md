@@ -1,0 +1,5 @@
+- Static HTML/CSS/JavaScript project.
+- Keep the site responsive and accessible.
+- Store replacement photos in assets/images.
+- Manage social URLs in js/links.js.
+- Do not require a build step unless dependencies are added.
